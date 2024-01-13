@@ -12,6 +12,7 @@ pub struct Opt {
 
 #[derive(Subcommand)]
 enum Command {
+    #[command(name = "check-me")]
     Check {
         file: PathBuf,
     },
@@ -20,6 +21,9 @@ enum Command {
     },
     #[clap(subcommand)]
     Temp(TempCommand),
+    #[clap(subcommand)]
+    #[command(name = "other-temp")]
+    TempOther(TempCommand),
 }
 
 #[derive(Subcommand)]
