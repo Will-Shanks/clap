@@ -8,7 +8,7 @@ members = [
   "clap_complete",
   "clap_complete_fig",
   "clap_complete_nushell",
-  "clap_mangen",
+  "clap_mangen", "mrc",
 ]
 
 [workspace.package]
